@@ -15,12 +15,12 @@ SelectView.prototype.bindEvents = function () {
   })
 };
 
-SelectView.prototype.populate = function (films) {
-  films.forEach((film, index) => {
-    const countryOption = this.createOption(film.name, index);
-    this.element.appendChild(filmOption);
-  });
-};
+// SelectView.prototype.populate = function (films) {
+//   films.forEach((film, index) => {
+//     const countryOption = this.createOption(film.name, index);
+//     this.element.appendChild(filmOption);
+//   });
+// };
 
 SelectView.prototype.createOption = function (name, index) {
   const option = document.createElement('option');

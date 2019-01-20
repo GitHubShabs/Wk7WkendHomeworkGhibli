@@ -24,7 +24,6 @@ FilmView.prototype.render = function (film) {
 
   };
 
-};
 
 FilmView.prototype.clearFilm = function () {
   this.container.innerHTML = '';
