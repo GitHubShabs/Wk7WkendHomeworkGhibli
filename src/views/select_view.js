@@ -17,7 +17,7 @@ SelectView.prototype.bindEvents = function () {
 
 SelectView.prototype.populate = function (films) {
   films.forEach((film, index) => {
-    const filmOption = this.createOption(film.name, index);
+    const filmOption = this.createOption(film.title, index);
     this.element.appendChild(filmOption);
   });
 };

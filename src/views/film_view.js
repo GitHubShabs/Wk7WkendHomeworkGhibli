@@ -24,6 +24,12 @@ FilmView.prototype.render = function (film) {
 
   };
 
+  FilmView.prototype.createTextElement = function (elementType, text) {
+    const element = document.createElement(elementType);
+    element.textContent = text;
+    return element;
+  };
+
 
 FilmView.prototype.clearFilm = function () {
   this.container.innerHTML = '';
