@@ -12,8 +12,8 @@ FilmView.prototype.bindEvents = function () {
 };
 
 FilmView.prototype.render = function (film) {
-  const filmName = this.createTextElement('h2', film.name);
-  this.container.appendChild(filmName);
+  const filmTitle = this.createTextElement('h2', film.title);
+  this.container.appendChild(filmTitle);
 
   const filmDescription = this.createTextElement('p', film.description);
   this.container.appendChild(filmDescription);

@@ -15,16 +15,16 @@ SelectView.prototype.bindEvents = function () {
   })
 };
 
-// SelectView.prototype.populate = function (films) {
-//   films.forEach((film, index) => {
-//     const countryOption = this.createOption(film.name, index);
-//     this.element.appendChild(filmOption);
-//   });
-// };
+SelectView.prototype.populate = function (films) {
+  films.forEach((film, index) => {
+    const filmOption = this.createOption(film.name, index);
+    this.element.appendChild(filmOption);
+  });
+};
 
-SelectView.prototype.createOption = function (name, index) {
+SelectView.prototype.createOption = function (title, index) {
   const option = document.createElement('option');
-  option.textContent = name;
+  option.textContent = title;
   option.value = index;
   return option;
 };
